@@ -27,7 +27,8 @@ export class SentryErrorPlugin implements Plugin {
         if( !this.config.dsn ) throw new Error(`Couldn't initialize Raven, missing dsn parameter`);
 
         Sentry.init({
-            dsn: this.config.dsn
+            dsn: this.config.dsn,
+            enabled: this.config.enabled
         });
 
         // errors
