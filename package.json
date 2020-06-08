@@ -7,7 +7,7 @@
   "scripts": {
     "tsc": "rm -rf dist/ && tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npm build"
+    "prepare": "npm run tsc"
   },
   "keywords": [
     "jovo",
